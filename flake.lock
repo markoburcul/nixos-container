@@ -1,0 +1,87 @@
+{
+  "nodes": {
+    "circom-compat": {
+      "inputs": {
+        "nixpkgs": [
+          "codex-flake",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1736521871,
+        "narHash": "sha256-d34XNLg9NGPEOARHW+BIOAWalkHdEUAwsv3mpLZQxds=",
+        "owner": "codex-storage",
+        "repo": "circom-compat-ffi",
+        "rev": "8cd4ed44fdafe59d4ec1184420639cae4c4dbab9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "codex-storage",
+        "repo": "circom-compat-ffi",
+        "type": "github"
+      }
+    },
+    "codex-flake": {
+      "inputs": {
+        "circom-compat": "circom-compat",
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1736523761,
+        "narHash": "sha256-5cNOlHMRn/bzI1A/OsDQeDuwrMisk9BKkniAbHxcFFY=",
+        "ref": "add-nix-codex-service-definition",
+        "rev": "7bddd4a52398e0b1a47f773e78f91766895820bc",
+        "revCount": 720,
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/codex-storage/nim-codex"
+      },
+      "original": {
+        "ref": "add-nix-codex-service-definition",
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/codex-storage/nim-codex"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1736200483,
+        "narHash": "sha256-JO+lFN2HsCwSLMUWXHeOad6QUxOuwe9UOAF/iSl1J4I=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "3f0a8ac25fb674611b98089ca3a5dd6480175751",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-24.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1736200483,
+        "narHash": "sha256-JO+lFN2HsCwSLMUWXHeOad6QUxOuwe9UOAF/iSl1J4I=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "3f0a8ac25fb674611b98089ca3a5dd6480175751",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-24.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "codex-flake": "codex-flake",
+        "nixpkgs": "nixpkgs_2"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
